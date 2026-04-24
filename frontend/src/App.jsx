@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setResponse(null);
     try {
-      const res = await axios.post("https://graph-backend-gqoe.onrender.com", {
+      const res = await axios.post("https://graph-backend-gqoe.onrender.com/bfhl", {
         data: input.split(",").map((item) => item.trim()),
       });
       setResponse(res.data);
